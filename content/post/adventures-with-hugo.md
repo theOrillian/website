@@ -36,4 +36,31 @@ Day 3 - Part #1: Publish the website
 
 Way easier than I thought. Follow the step-by-step instructions on <a href="http://whipperstacker.com/2015/11/27/deploying-a-stand-alone-hugo-site-to-github-pages-mapped-to-a-custom-domain/" target="_blank">Deploying a Stand-Alone Hugo Site to GitHub Pages Mapped to a Custom Domain</a>.
 
-GitHub pages does not support https. To get the website behind https, you can set up a free CloudFlare, pointing to your custom domain
+A couple of things that slowed down my progress were:
+* the repository that needed to be created was `<userName>.github.io`, not `github.io` in theOrillian user GitHub account.
+* the `config.toml` needed to be altered, setting `baseurl = "http://theOrillian.github.io"`
+
+I pinched and updated a deploy script from @sgylon:
+
+```shell
+#!/bin/bash
+
+echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
+
+# Build the project.
+hugo # if using a theme, replace by `hugo -t <yourtheme>`
+
+# Add changes to git.
+git add -A
+
+# Commit changes.
+msg="Rebuilding site `date`"
+if [ $# -eq 1 ]
+      then msg="$1"
+fi
+git commit -m "$msg"
+
+# Push source and build repos.
+git push origin master
+git subtree push --prefix=public git@github.com:theOrillian/theOrillian.github.io master
+```
