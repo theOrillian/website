@@ -3,7 +3,7 @@
 echo -e "\033[0;32mDeploying website source to GitHub...\033[0m"
 
 # Build the project.
-hugo # if using a theme, replace by `hugo -t <yourtheme>`
+hugo -t hyde-y
 
 # Add changes to git.
 git add -A
