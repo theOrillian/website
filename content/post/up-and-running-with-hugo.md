@@ -18,18 +18,20 @@ Use the <a href="https://gohugo.io/overview/quickstart/" target="_blank">Hugo Qu
 
 Use GitHub's <a href="https://guides.github.com/features/mastering-markdown" target="_blank">Mastering Markdown</a> to get started with adding some format to your blog post. Hugo uses <a href="https://github.com/russross/blackfriday" target="_blank">Blackfriday</a> markdown engine which has a few additional features.
 
-Markdown does not support opening links to a new browser tab. To have links open in new tabs, you need to write the HTML yourself - `<a href="https://orillian.com" target="_blank">theOrillian</a>`
+Markdown does not support opening links to a new browser tab. To have links open in new tabs, you need to write the HTML yourself - `<a href="https://orillian.com" target="_blank">orillian.com</a>`
 
 This site uses <a href="https://github.com/enten/hyde-y" target="_blank">Hyde-Y</a> theme. If you plan on using this theme, you need to edit the **config.toml**, **data/Menu.toml** & **data/FootMenu.toml** as shown in the theme configuration instructions.
 
-[Blog summaries](https://gohugo.io/content/summaries/) can be controlled by using `<!--more-->`.
+<a href="https://gohugo.io/content/summaries/" target="_blank">Blog summaries</a> can be controlled by using `<!--more-->`.
+
+Update the flavicon. If
 
 Start to finish, the initial developer version stand-up of this site using Hugo took about 2 hours. No knowledge of Go or Javascript or CSS was required.
 
 Day 2 - Publish the website
 =====
 
-Today I messed up. As a seasoned IT pro and I still mess up sometimes. I was worrying about taxonomies and creating a "blog series" instead of just accomplishing my goal - use Hugo to generate the <a href="orillian.com" target="_blank">orillian.com</a> website!
+Today I messed up. As a seasoned IT pro and I still mess up sometimes. I was worrying about taxonomies and creating a "blog series" instead of just accomplishing my goal - use Hugo to generate the <a href="https://orillian.com" target="_blank">orillian.com</a> website!
 
 I wasted several hours and did not accomplish my goal. I'll try again tomorrow.
 
@@ -45,7 +47,8 @@ I chose to publish to GitHub Pages, but if I was doing it again, I'd choose to p
 >
 > * Valid SSL is provided for custom domain free of charge.
 > * Hosted content is propagated all over the world via Google’s super fast CDN.
-> * HTTP Cache-Control header can be customized by file name pattern; i.e. images are cached for 1 year while HTML content can be given a short expiry.
+> * HTTP Cache-Control header can be customized by file name pattern; i.e.
+> images are cached for 1 year while HTML content can be given a short expiry.
 
 ### Deploying to GitHub Pages
 
