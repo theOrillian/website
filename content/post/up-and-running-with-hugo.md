@@ -20,7 +20,7 @@ Use GitHub's <a href="https://guides.github.com/features/mastering-markdown" tar
 
 Markdown does not support opening links to a new browser tab. To have links open in new tabs, you need to write the HTML yourself - `<a href="https://orillian.com" target="_blank">theOrillian</a>`
 
-This site uses [Hyde-Y](https://github.com/enten/hyde-y). If you plan on using this theme, you need to edit the **config.toml**, **data/Menu.toml** & **data/FootMenu.toml** as shown in the theme configuration instructions.
+This site uses https://github.com/enten/hyde-y. If you plan on using this theme, you need to edit the **config.toml**, **data/Menu.toml** & **data/FootMenu.toml** as shown in the theme configuration instructions.
 
 [Blog summaries](https://gohugo.io/content/summaries/) can be controlled by using `<!--more-->`.
 
