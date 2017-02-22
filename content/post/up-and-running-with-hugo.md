@@ -7,7 +7,7 @@ draft = false
 
 +++
 
-Like all new technologies, this will be a learn as you go process. This post describes the process of creating and developing <a href="https://orillian.com" target="_blank">theOrillian</a> website. As new features are implemented, the post will be updated...
+Like all new technologies, this will be a learn-as-you-go process. This post describes the process of creating and developing <a href="https://orillian.com" target="_blank">theOrillian</a> website. This post will serve as my learn-as-you-go test post. As new features are discovered/implemented, the post will be updated.
 
 <!--more-->
 
@@ -16,11 +16,11 @@ Day 1 - Stand up the development environment
 
 Use the <a href="https://gohugo.io/overview/quickstart/" target="_blank">Hugo Quickstart Guide</a> to get rolling.
 
-Use GitHub's <a href="https://guides.github.com/features/mastering-markdown" target="_blank">Mastering Markdown</a> to get started with adding some format to your blog post.
+Use GitHub's <a href="https://guides.github.com/features/mastering-markdown" target="_blank">Mastering Markdown</a> to get started with adding some format to your blog post. Hugo uses <a href="https://github.com/russross/blackfriday" target="_blank">Blackfriday</a> markdown engine which has a few additional features.
 
 Markdown does not support opening links to a new browser tab. To have links open in new tabs, you need to write the HTML yourself - `<a href="https://orillian.com" target="_blank">theOrillian</a>`
 
-This site uses https://github.com/enten/hyde-y. If you plan on using this theme, you need to edit the **config.toml**, **data/Menu.toml** & **data/FootMenu.toml** as shown in the theme configuration instructions.
+This site uses <a href="https://github.com/enten/hyde-y" target="_blank">Hyde-Y</a> theme. If you plan on using this theme, you need to edit the **config.toml**, **data/Menu.toml** & **data/FootMenu.toml** as shown in the theme configuration instructions.
 
 [Blog summaries](https://gohugo.io/content/summaries/) can be controlled by using `<!--more-->`.
 
@@ -29,7 +29,7 @@ Start to finish, the initial developer version stand-up of this site using Hugo 
 Day 2 - Publish the website
 =====
 
-Today I messed up. Seasoned IT pro and I still mess up sometimes. I was worrying about taxonomies and creating a "blog series" instead of just accomplishing my goal - publish theOrillian!
+Today I messed up. As a seasoned IT pro and I still mess up sometimes. I was worrying about taxonomies and creating a "blog series" instead of just accomplishing my goal - use Hugo to generate the <a href="orillian.com" target="_blank">orillian.com</a> website!
 
 Day 3 - Part #1: Publish the website
 =====
@@ -45,11 +45,12 @@ I pinched and updated a deploy script from GitHub user @sgylon:
 ```shell
 #!/bin/bash
 
-echo -e "\033[0;32mDeploying website source to GitHub...\033[0m"
-
 # Build the project.
+echo -e "\033[0;32mUsing Hugo to generate static website...\033[0m"
 rm -rf public/*
 hugo
+
+echo -e "\033[0;32mPushing website source to GitHub...\033[0m"
 
 # Add changes to git.
 git add -A
@@ -78,11 +79,15 @@ cd ..
 Day 3 - Part #2: Set a custom domain for site
 =====
 
-For step-by-step instructions on setting up a custom domain for your site, while using Google domains, check out <a href="http://www.curtismlarson.com/blog/2015/04/12/github-pages-google-domains/" target="_blank">GitHub Pages using google domains</a>.
+For step-by-step instructions on setting up a custom domain for your site, while using Google Domains, check out <a href="http://www.curtismlarson.com/blog/2015/04/12/github-pages-google-domains/" target="_blank">GitHub Pages using Google Domains</a>.
 
-Your Goolge domain can be administrated from `domains.google.com`.
+Your Google Domain can be administrated from `domains.google.com`. It took about an hour for the DNS records to propagate. The site says it may take up to 24hours. Grab dinner, walk the dog or get some sleep.
 
 I wanted to delete the entire public folder before generating and committing the new website. But there were 2 files that I wanted to preserve CNAME and the README.md in the GitHub repository. These files needed to be copied to the Hugo static folder.
 
 Day 3 - Part #3: Serve custom domain with https
 =====
+
+The article I used to configure https for my GitHub Pages is <a href="https://www.goyllo.com/github/pages/free-cloudflare-ssl-for-custom-domain/" target="_blank">How To Add Free Cloudflare SSL in Github Pages with Custom Domain</a>.
+
+It was almost too easy to set up Cloudflare. Create a free account, then let it discover your current configuration, finally change the DNS server for your domain. Again, the site says it may take up to 24hours. Grab dinner, walk the dog or get some sleep.
