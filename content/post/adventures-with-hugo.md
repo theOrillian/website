@@ -38,7 +38,7 @@ Way easier than I thought. Follow the step-by-step instructions on <a href="http
 
 A couple of things that slowed down my progress were:
 * the repository that needed to be created was `<userName>.github.io`, not `github.io` in theOrillian user GitHub account.
-* the `config.toml` needed to be altered, setting `baseurl = "http://theOrillian.github.io/"` ***Dont forget the final /***
+* the `config.toml` needed to be altered, setting `baseurl = "http://theOrillian.github.io/"` ***Don't forget the final '/'***
 
 I pinched and updated a deploy script from GitHub user @sgylon:
 
@@ -67,6 +67,10 @@ git subtree push --prefix=public git@github.com:theOrillian/theOrillian.github.i
 
 Day 3 - Part #2: Set a custom domain for site
 =====
+
+For step-by-step instructions on setting up a custom domain for your site, while using Google domains, check out <a href="http://www.curtismlarson.com/blog/2015/04/12/github-pages-google-domains/" target="_blank">GitHub Pages using google domains</a>.
+
+Your Goolge domain can be administrated from `domains.google.com`.
 
 Day 3 - Part #3: Serve custom domain with https
 =====
