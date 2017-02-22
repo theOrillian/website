@@ -40,7 +40,7 @@ A couple of things that slowed down my progress were:
 * the repository that needed to be created was `<userName>.github.io`, not `github.io` in theOrillian user GitHub account.
 * the `config.toml` needed to be altered, setting `baseurl = "http://theOrillian.github.io"`
 
-I pinched and updated a deploy script from @sgylon:
+I pinched and updated a deploy script from GitHub user @sgylon:
 
 ```shell
 #!/bin/bash
@@ -64,3 +64,9 @@ git commit -m "$msg"
 git push origin master
 git subtree push --prefix=public git@github.com:theOrillian/theOrillian.github.io master
 ```
+
+Day 3 - Part #2: Set a custom domain for site
+=====
+
+Day 3 - Part #3: Serve custom domain with https
+=====
