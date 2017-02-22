@@ -45,10 +45,11 @@ I pinched and updated a deploy script from GitHub user @sgylon:
 ```shell
 #!/bin/bash
 
-echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
+echo -e "\033[0;32mDeploying website source to GitHub...\033[0m"
 
 # Build the project.
-hugo # if using a theme, replace by `hugo -t <yourtheme>`
+rm -rf public/*
+hugo
 
 # Add changes to git.
 git add -A
@@ -60,9 +61,17 @@ if [ $# -eq 1 ]
 fi
 git commit -m "$msg"
 
-# Push source and build repos.
+# Push source repos.
 git push origin master
-git subtree push --prefix=public git@github.com:theOrillian/theOrillian.github.io master
+
+# Push the build repos.
+echo -e "\033[0;32mDeploying website to GitHub...\033[0m"
+#cd public && git add --all && git commit -m "$msg" && git push origin master && cd ..
+cd public
+git add --all
+git commit -m "$msg"
+git push origin master
+cd ..
 ```
 
 Day 3 - Part #2: Set a custom domain for site
@@ -71,6 +80,8 @@ Day 3 - Part #2: Set a custom domain for site
 For step-by-step instructions on setting up a custom domain for your site, while using Google domains, check out <a href="http://www.curtismlarson.com/blog/2015/04/12/github-pages-google-domains/" target="_blank">GitHub Pages using google domains</a>.
 
 Your Goolge domain can be administrated from `domains.google.com`.
+
+I wanted to delete the entire public folder before generating and committing the new website. But there were 2 files that I wanted to preserve CNAME and the README.md in the GitHub repository. These files needed to be copied to the Hugo static folder.
 
 Day 3 - Part #3: Serve custom domain with https
 =====
