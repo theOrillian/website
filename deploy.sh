@@ -21,6 +21,7 @@ git push origin master
 
 # Push the build repos.
 echo -e "\033[0;32mDeploying website to GitHub...\033[0m"
+
 #cd public && git add --all && git commit -m "$msg" && git push origin master && cd ..
 cd public
 git add --all

@@ -1,6 +1,6 @@
 +++
 date = "2017-02-20T09:26:32-05:00"
-title = "Adventures with Hugo"
+title = "Up and running with Hugo"
 tags = ["Hugo", "Website"]
 categories = ["theOrillian"]
 draft = false
@@ -66,6 +66,7 @@ git push origin master
 
 # Push the build repos.
 echo -e "\033[0;32mDeploying website to GitHub...\033[0m"
+
 #cd public && git add --all && git commit -m "$msg" && git push origin master && cd ..
 cd public
 git add --all
