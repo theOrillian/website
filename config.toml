@@ -2,7 +2,7 @@
 baseurl = "http://theOrillian.github.io/"
 
 # Site title
-title = "theOrillian blog"
+title = "Orillian"
 
 # Copyright
 copyright = "(c) 2017 Orillian."
@@ -62,9 +62,9 @@ paginatePath = "page"
     googleAnalytics = "Your Google Analytics tracking code"
 
     # Sidebar social links.
-    github = "enten/hugo-boilerplate" # Your Github profile ID
+    github = "theOrillian" # Your Github profile ID
     bitbucket = "" # Your Bitbucket profile ID
-    linkedin = "" # Your LinkedIn profile ID (from public URL)
+    linkedin = "gpgraham" # Your LinkedIn profile ID (from public URL)
     googleplus = "" # Your Google+ profile ID
     facebook = "" # Your Facebook profile ID
     twitter = "" # Your Twitter profile ID

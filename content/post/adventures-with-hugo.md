@@ -38,7 +38,7 @@ Way easier than I thought. Follow the step-by-step instructions on <a href="http
 
 A couple of things that slowed down my progress were:
 * the repository that needed to be created was `<userName>.github.io`, not `github.io` in theOrillian user GitHub account.
-* the `config.toml` needed to be altered, setting `baseurl = "http://theOrillian.github.io"`
+* the `config.toml` needed to be altered, setting `baseurl = "http://theOrillian.github.io/"` ***Dont forget the final /***
 
 I pinched and updated a deploy script from GitHub user @sgylon:
 

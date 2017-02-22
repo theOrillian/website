@@ -3,7 +3,8 @@
 echo -e "\033[0;32mDeploying website source to GitHub...\033[0m"
 
 # Build the project.
-hugo -t hyde-y
+rm -rf public/*
+hugo
 
 # Add changes to git.
 git add -A
