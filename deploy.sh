@@ -13,8 +13,10 @@ msg="Rebuilding site `date`"
 if [ $# -eq 1 ]
       then msg="$1"
 fi
-git commit -a -m "$msg"
+git commit -m "$msg"
 
-# Push source and build repos.
+# Push source repos.
 git push origin master
-git subtree push --prefix=public git@github.com:theOrillian/theOrillian.github.io master
+
+# Push the build repos.
+cd public && git add --all && git commit -m "$msg" && git push origin master && cd ..
