@@ -1,6 +1,6 @@
 +++
 date = "2017-02-20T09:26:32-05:00"
-title = "Up and running with Hugo"
+title = "Getting started with Hugo static website generator"
 tags = ["Hugo", "Website"]
 categories = ["theOrillian"]
 draft = false
@@ -24,8 +24,6 @@ This site uses <a href="https://github.com/enten/hyde-y" target="_blank">Hyde-Y<
 
 <a href="https://gohugo.io/content/summaries/" target="_blank">Blog summaries</a> can be controlled by using `<!--more-->`.
 
-Update the flavicon. If
-
 Start to finish, the initial developer version stand-up of this site using Hugo took about 2 hours. No knowledge of Go or Javascript or CSS was required.
 
 Day 2 - Publish the website
@@ -34,6 +32,8 @@ Day 2 - Publish the website
 Today I messed up. As a seasoned IT pro and I still mess up sometimes. I was worrying about taxonomies and creating a "blog series" instead of just accomplishing my goal - use Hugo to generate the <a href="https://orillian.com" target="_blank">orillian.com</a> website!
 
 I wasted several hours and did not accomplish my goal. I'll try again tomorrow.
+
+The goal of this site is to document my career based experiences and learnings. Most of the blog postings will be technical in nature, some may be administrative.
 
 Day 3 - Part #1: Publish the website
 =====
@@ -101,7 +101,7 @@ For step-by-step instructions on setting up a custom domain for your site, while
 
 Your Google Domain can be administrated from `domains.google.com`. It took about an hour for the DNS records to propagate. The site says it may take up to 24hours. Grab dinner, walk the dog or get some sleep.
 
-I wanted to delete the entire public folder before generating and committing the new website. But there were 2 files that I wanted to preserve CNAME and the README.md in the GitHub repository. These files needed to be copied to the Hugo static folder and commited to the Hugo website source.
+I wanted to delete the entire public folder before generating and committing the new website. But there were 2 files that I wanted to preserve CNAME and the README.md in the GitHub repository. These files needed to be copied to the Hugo static folder and committed to the Hugo website source.
 
 Day 3 - Part #3: Serve custom domain with https
 =====
@@ -109,3 +109,8 @@ Day 3 - Part #3: Serve custom domain with https
 The article I used to configure https for my GitHub Pages is <a href="https://www.goyllo.com/github/pages/free-cloudflare-ssl-for-custom-domain/" target="_blank">How To Add Free Cloudflare SSL in Github Pages with Custom Domain</a>.
 
 It was almost too easy to set up Cloudflare. Create a free account, then let it discover your current configuration, finally change the DNS server for your domain. Again, the site says it may take up to 24hours. Grab dinner, walk the dog or get some sleep.
+
+Day 3 - Part #4: Creating content
+=====
+
+The whole purpose of publishing a static website is to share content. So, while there are many things I'd like to change, it's time to create content!
