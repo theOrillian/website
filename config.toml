@@ -2,10 +2,10 @@
 baseurl = "https://orillian.com/"
 
 # Site title
-title = "Orillian"
+title = "theOrillian"
 
 # Copyright
-copyright = "(c) 2017 theOrillian."
+copyright = "(c) 2017 Greg Graham, theOrillian."
 
 # Language
 languageCode = "en-EN"
@@ -43,7 +43,7 @@ paginatePath = "page"
 [params]
     # You can use markdown here.
     brand = "theOrillian"
-    topline = "Plan, execute, measure, adapt and repeat..."
+    topline = "Dynamics 365 For Operations"
     footline = "Coded with <i class='fa fa-heart'></i>"
 
     # Sidebar position

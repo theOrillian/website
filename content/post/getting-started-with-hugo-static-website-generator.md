@@ -1,11 +1,17 @@
-+++
-date = "2017-02-20T09:26:32-05:00"
-title = "Getting started with Hugo static website generator"
-tags = ["Hugo", "Website"]
-categories = ["theOrillian"]
-draft = false
-
-+++
+---
+author: Greg Graham, theOrillian
+date: 2017-02-25T07:04:29-05:00
+description: description
+draft: false
+keywords:
+- Hugo
+tags:
+- Website
+title: Getting started with Hugo static website generator
+topics:
+- theOrillian
+type: post
+---
 
 Like all new technologies, this will be a learn-as-you-go process. This post describes the process of creating and developing <a href="https://orillian.com" target="_blank">theOrillian</a> website. This post will serve as my learn-as-you-go test post. As new features are discovered/implemented, the post will be updated.
 
