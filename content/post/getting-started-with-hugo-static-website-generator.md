@@ -1,7 +1,7 @@
 ---
 author: Greg Graham, theOrillian
 date: 2017-02-25T07:04:29-05:00
-description: description
+description:
 draft: false
 keywords:
 - Hugo
@@ -28,7 +28,7 @@ Markdown does not support opening links to a new browser tab. To have links open
 
 This site uses <a href="https://github.com/enten/hyde-y" target="_blank">Hyde-Y</a> theme. If you plan on using this theme, you need to edit the **config.toml**, **data/Menu.toml** & **data/FootMenu.toml** as shown in the theme configuration instructions.
 
-<a href="https://gohugo.io/content/summaries/" target="_blank">Blog summaries</a> can be controlled by using `<!--more-->`.
+<a href="https://gohugo.io/content/summaries/" target="_blank">Blog summaries</a> can be controlled by using `<!--more-->`. Leave the post metadata for the description field blank.
 
 Start to finish, the initial developer version stand-up of this site using Hugo took about 2 hours. No knowledge of Go or Javascript or CSS was required.
 
