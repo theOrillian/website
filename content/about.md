@@ -1,14 +1,14 @@
 ---
 author: Greg Graham, theOrillian
 date: 2017-02-25T05:15:17-05:00
-draft: true
-title: About me
+draft: false
+title: Greg Graham, theOrillian
 type: static
 ---
 
 Based in Marshalltown Iowa, I am a Senior Technology Engineer for <a href="https://marshalltown.com" target="_blank">Marshalltown</a>, a mid-west tool manufacturing and distribution company.
 
-My role at Marshalltown is to work with our Dynamics AX users to understand their business requirements and match those with the native capabilities of Dynamics AX. 
+My role at Marshalltown is to work with our Dynamics AX users to understand their business requirements and match those with the native capabilities of Dynamics AX.
 
 I consider myself a Dynamics AX expert developer. As well, I am confident with all aspects SQLServer, including ETL and Analytics.
 
