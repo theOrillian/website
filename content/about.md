@@ -5,7 +5,7 @@ draft: false
 title: Greg Graham, theOrillian
 type: static
 ---
-<img src="https://orillian.com/static/img/avatar.jpg" width=100>
+<img src="https://orillian.com/avatar.jpg" width=100>
 
 Based in Marshalltown Iowa, I am a Senior Technology Engineer for <a href="https://marshalltown.com" target="_blank">Marshalltown</a>, a mid-west tool manufacturing and distribution company.
 
