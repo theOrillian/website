@@ -1,2 +1,2 @@
 # website
-Hugo content for public website theOrillian.github.io
+Hugo content for public website orillian.com
