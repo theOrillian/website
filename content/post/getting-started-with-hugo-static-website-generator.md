@@ -13,7 +13,7 @@ topics:
 type: post
 ---
 
-Like all new technologies, this will be a learn-as-you-go process. This post describes the process of creating and developing <a href="https://orillian.com" target="_blank">theOrillian</a> website. This post will serve as my learn-as-you-go test post. As new features are discovered/implemented, the post will be updated.
+I do not recommend using the information in this blog post as your template for generating a Hugo static website. The post serves me as content I can use to understand how Hugo works. While Googling for answers to setup and configuration questions, I noticed a wide variety of possible solutions. Sometimes this lead to more confusion. In the end, the number one most important thing _for me_ was to create a ./deploy.sh script that codifies the deploy process. Then, move on to creating content
 
 <!--more-->
 
